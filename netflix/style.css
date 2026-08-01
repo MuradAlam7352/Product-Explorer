@@ -1,0 +1,234 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url(images/bg.jpg);
+background-size:cover;
+background-position:center;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+}
+
+.logo{
+width:160px;
+}
+
+.language,
+.signin{
+padding:8px 18px;
+border:none;
+cursor:pointer;
+margin-left:10px;
+}
+
+.language{
+background:transparent;
+color:white;
+border:1px solid white;
+}
+
+.signin{
+background:#e50914;
+color:white;
+border-radius:4px;
+}
+
+.hero{
+height:80%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+max-width:700px;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.hero p{
+margin-bottom:20px;
+font-size:20px;
+}
+
+.email-box{
+display:flex;
+gap:10px;
+}
+
+.email-box input{
+width:380px;
+padding:18px;
+background:#111;
+border:1px solid gray;
+color:white;
+font-size:18px;
+}
+
+.email-box button{
+background:#e50914;
+color:white;
+border:none;
+padding:18px 35px;
+font-size:22px;
+cursor:pointer;
+}
+
+.movies{
+padding:60px 10%;
+}
+
+.movies h2{
+margin-bottom:30px;
+font-size:35px;
+}
+
+.movie-row{
+display:flex;
+gap:25px;
+overflow:auto;
+}
+
+.movie-row img{
+width:250px;
+border-radius:8px;
+transition:.4s;
+cursor:pointer;
+}
+
+.movie-row img:hover{
+transform:scale(1.1);
+}
+
+.features{
+padding:70px 10%;
+}
+
+.feature{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:80px;
+flex-wrap:wrap;
+}
+
+.feature img{
+width:500px;
+max-width:100%;
+}
+
+.text{
+width:500px;
+}
+
+.text h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.text p{
+font-size:22px;
+}
+
+.faq{
+padding:70px 10%;
+}
+
+.faq h2{
+text-align:center;
+font-size:45px;
+margin-bottom:40px;
+}
+
+.question{
+background:#303030;
+padding:25px;
+margin-bottom:10px;
+font-size:24px;
+cursor:pointer;
+transition:.3s;
+}
+
+.question:hover{
+background:#444;
+}
+
+footer{
+padding:60px 10%;
+color:#999;
+}
+
+.footer-links{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+margin:30px 0;
+gap:15px;
+}
+
+.footer-links a{
+color:#999;
+text-decoration:none;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero h3{
+font-size:22px;
+}
+
+.email-box{
+flex-direction:column;
+}
+
+.email-box input{
+width:100%;
+}
+
+.feature{
+flex-direction:column;
+text-align:center;
+}
+
+.text{
+width:100%;
+margin-bottom:30px;
+}
+
+.text h2{
+font-size:35px;
+}
+
+.movie-row img{
+width:180px;
+}
+
+}
